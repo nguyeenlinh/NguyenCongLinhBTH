@@ -1,0 +1,17 @@
+@model NguyenCongLinhBTH2.Models.Employee
+@{
+    string id = @Guid.NewGuid().ToString("N");
+}
+
+<form asp-action="Create" method="post" class="col-6">
+    <input type="hidden" asp-for="EmployeeID" value=@id>
+    <div class="mb-3">
+        <label for="emp_name" class="form-label">Employee Name:</label>
+        <input type="text" class="form-control" id="emp_name" asp-for="EmployeeName">
+    </div>
+    <div class="mb-3">
+        <label for="emp_add" class="form-label">Employee Address:</label>
+        <input type="text" class="form-control" id="emp_add" asp-for="EmployeeAddress">
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
