@@ -2,8 +2,8 @@ namespace NguyenCongLinhBTH2.Models
 {
     public class Employee
     {
-        public string EmployeeID { get; set; }
-        public string EmployeeName { get; set; }
-        public string EmployeeAddress { get; set; }
+        public string EmpID { get; set; }
+        public string EmpName { get; set; }
+        public string Address { get; set; }
     }
 }

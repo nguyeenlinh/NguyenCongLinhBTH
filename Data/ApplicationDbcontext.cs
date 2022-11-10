@@ -13,5 +13,6 @@ namespace NguyenCongLinhBTH2.Data
         public DbSet<Employee> Employees { get; set; }
         public DbSet<Person> People { get; set; }
         public DbSet<Customer> Customers { get; set; }
+        public DbSet<NguyenCongLinhBTH2.Models.Employee> Employee { get; set; }
     }
 }
